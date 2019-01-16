@@ -52,15 +52,7 @@ namespace Treehouse.FitnessFrog.Controllers
             bool? exclude,
             string notes)
         {
-           
-
-            ViewBag.Date = ModelState["Date"].Value.AttemptedValue;
-            ViewBag.ActivityId = ModelState["ActivityId"].Value.AttemptedValue;
-            ViewBag.Duration = ModelState["Duration"].Value.AttemptedValue;
-            ViewBag.Intensity = ModelState["Intensity"].Value.AttemptedValue;
-            ViewBag.exclude = ModelState["Exclude"].Value.AttemptedValue;
-            ViewBag.notes = ModelState["Notes"].Value.AttemptedValue;
-            
+                       
             return View();
         }
 
