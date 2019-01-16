@@ -54,12 +54,12 @@ namespace Treehouse.FitnessFrog.Controllers
         {
            
 
-            ViewBag.Date = date;
-            ViewBag.ActivityId = activityId;
-            ViewBag.Duration = duration;
-            ViewBag.Intensity = intensity;
-            ViewBag.exclude = exclude;
-            ViewBag.notes = notes;
+            ViewBag.Date = ModelState["Date"].Value.AttemptedValue;
+            ViewBag.ActivityId = ModelState["ActivityId"].Value.AttemptedValue;
+            ViewBag.Duration = ModelState["Duration"].Value.AttemptedValue;
+            ViewBag.Intensity = ModelState["Intensity"].Value.AttemptedValue;
+            ViewBag.exclude = ModelState["Exclude"].Value.AttemptedValue;
+            ViewBag.notes = ModelState["Notes"].Value.AttemptedValue;
             
             return View();
         }
